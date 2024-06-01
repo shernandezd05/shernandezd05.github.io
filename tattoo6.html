@@ -1,0 +1,81 @@
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+	<title>Proyecto final Lenguaje de Marcas</title>
+	<link rel="stylesheet" href="tattoo-css.css">
+	<link rel="icon" type="image/jpg" href="C:\sergioHernandezDiaz\393271d117308b2155c8a162dc8e595d\favicon-32x32.png"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header>
+		<div>
+			<img src="C:\sergioHernandezDiaz\rayo.png">
+		</div>
+		<h1>GOOFY AHH TATTOO</h1>
+		<nav>
+			<ul>
+				<li><a href="C:\sergioHernandezDiaz\index.html">Inicio</li></a>
+				<li><a href="C:\sergioHernandezDiaz\contacto.html">Contacto</li></a>
+				<li><a href="C:\sergioHernandezDiaz\AcercaDe.html">Acerca de</li></a>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h1>Tigershark</h1><br>
+		<img src="C:\sergioHernandezDiaz\kisspng-invizimals-the-lost-tribes-tigershark-invizimals-invizimals-2-cartoons-printable-coloring-pa-5baaf00fe29091.148500921537929231928.png"><br><br>
+		<table>
+			<tr>
+				<th>Precio</th>
+				<th>Descripción</th>
+			</tr>
+			<tr>
+				<td>115.00 € (tamaño mediano)</td>
+				<td>Este tatuaje muestra un dibujo en arte lineal de un dragón. El dragón tiene alas grandes y puntiagudas, una boca abierta con dientes visibles, y su cuerpo está adornado con escamas y espinas. La cola es larga y termina en una punta puntiaguda.</td>
+			</tr>
+		</table><br>
+		<form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+			<label for="lugar">Elije una parte del cuerpo donde realizar el tatuaje:</label>
+			<select name="lugar" id="lugar">
+				<option value="cabeza">Cabeza</option>
+				<option value="cuello">Cuello</option>
+				<option value="torso">Torso</option>
+				<option value="espalda">Espalda</option>
+				<option value="brazo">Brazo</option>
+				<option value="pierna">Pierna</option>
+			</select><br>
+			<label for="nombre">Nombre:</label>
+			<input type="text" id="nombre" name="nombre" required><br>
+			<label for="telefono">Número de teléfono:</label>
+			<input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" required><br>
+			<input type="submit" value="Enviar" onclick="infoform()">
+		</form>
+	</main>
+	<footer>
+		<div class="texto">
+			<h3>C/ Rota, 47</h3>
+			<h3>Badajoz, España</h3><br>
+			<h3>info@tattoobadajoz</h3><br>
+			<h3>741852963</h3>
+		</div>
+		<div class="enlaces">
+			<div class "youtube">
+				<a href="https://www.youtube.com/"><img src="C:\sergioHernandezDiaz\e4011431aa0b6ab191117420ee9b2eaa.png"></a>
+			</div>
+			<div class "twitter">
+				<a href="https://x.com/home"><img src="C:\sergioHernandezDiaz\33b64faf03ae8c3e1f831f06a32e92ff.png"></a>
+			</div>
+			<div class="instagram">
+				<a href="https://www.facebook.com/?locale=es_ES"><img src="C:\sergioHernandezDiaz\78eca7760870277d71bc4d57ae97b06e.png"></a>
+			</div>
+		</div>
+	</footer>
+	
+	<script>
+        function infoform() {
+            const nombre = document.getElementById('nombre').value;
+            const telefono = document.getElementById('telefono').value;
+            alert(`Has ingresado los siguientes datos:\nNombre: ${nombre}\nTeléfono: ${telefono}`);
+        }
+    </script>
+</body>
+</html>
